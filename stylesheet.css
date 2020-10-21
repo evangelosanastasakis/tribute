@@ -1,0 +1,175 @@
+body {
+    font-family: "Playfair Display", sans-serif;
+     margin:0;
+     text-align:center;
+     background-color: #a0a65e;
+     overflow-y: scroll;
+     overflow-x: hidden;
+   }
+   
+   header {
+     background-color: #1b1c1a;
+     padding: 10px;
+     color:#7e746e;
+     line-height: 0.5;
+     width: 100%
+   }
+   
+   h1 {
+     font-family: Aladin, sans-serif;
+     font-size: 15vmin;
+   }
+   
+   h2 {
+     font-family: Aladin, sans-serif;
+     font-size: 10vmin;
+   }
+   
+   h3 {
+     font-family: Aladin, sans-serif;
+     font-size: 8vmin;
+   }
+   
+   h4 {
+     text-align: center;
+     font-size: 6vmin;
+   }
+   
+   #tribute-info {
+     font-size: 25px;
+     text-align: center;
+   }
+   
+   img {
+     height: auto;
+     max-width: 60vmin;
+     border-radius: 10px;
+     display:block;
+     margin: 0 auto;
+   }
+   
+   #img-div {
+     margin: 10px 10px 10px 10px;
+   }
+   #image {
+     max-width: 90vmin;
+     height: auto;
+     display:block;
+     margin: 0 auto;
+   }
+
+   .musk-anim:hover{
+    animation: muskpulse 3s infinite;
+   }
+   .america-anim{
+    animation: opacityanim 6s infinite;
+   }
+   
+   p {
+     text-align: justify;
+     font-size: 4vmin;
+     margin: 0 15px 15px 15px;
+   }
+   
+   
+   @media (min-width: 800px) {
+   
+   
+       #life-and-career {
+     display: flex;
+     justify-content: space-evenly;
+   }
+   
+     .influences-images {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-evenly;
+   }
+   
+     #row-1 {
+     display: flex;
+     justify-content: space-around;
+     flex-wrap: wrap;
+   }
+   .scale-img{
+    transform: scale(1);
+    transition: .3s ease-in-out;
+   }
+   .scale-img:hover{
+    transform: scale(1.3);
+   }
+   
+   }
+   .l-and-c {
+     background-color: beige;
+     border-radius: 10px;
+     padding: 10px;
+     margin: 0 20px 20px 20px;
+   }
+   #influences {
+     background-color: #ffd6d4;
+     padding: 10px;
+     width: 100%;
+   }
+   
+   #influences-title {
+      line-height: 0.5;
+   }
+   
+   #projects {
+     background-color: #797979;
+     padding: 10px;
+     max-width:100%;
+   }
+   
+   ul {
+     list-style-type: none;
+   }
+   
+   a {
+     color: black;
+   }
+   
+   a:hover {
+     color: #ec7c57;s
+   }
+   
+   footer {
+     background-color: #13121272;
+     color:#000000;
+     font-family: Aladin;
+     padding: 10px;
+     max-width: 100%;
+     margin-top: 100px;
+   }
+   
+   .albums {
+     font-size: 5vmin;
+     margin: 30px 0px 5px 0px;
+   }
+   
+   @keyframes muskpulse{
+    0% {
+     transform: scale(0.5, 0.5);
+    }
+    50% {
+      transform: scale(1, 1);
+     }
+     100% {
+      transform: scale(0.5, 0.5);
+     }
+   } 
+   @keyframes opacityanim{
+    0% {
+     opacity: 0;
+     border-radius: 50%
+    }
+    50% {
+      opacity: 0.5;
+      border-radius: 25%
+     }
+     100% {
+      opacity: 1;
+      border-radius: 0;
+     }
+   }
